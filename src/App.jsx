@@ -1,10 +1,12 @@
 import React, {useEffect} from "react";
-import ClubInfo from "./Components/ClubInfo";
-import Achievements from "./Components/Achievements";
-import Squad from "./Components/Squad";
-import Clubs from "./Components/Clubs";
+// import ClubInfo from "./Components/ClubInfo";
+// import Achievements from "./Components/Achievements";
+// import Squad from "./Components/Squad";
+// import Clubs from "./Components/Clubs";
 import "./App.css";
+import "./MagicBall.css"
 import "bootstrap/dist/css/bootstrap.min.css";
+import MagicBall from "./Components/MagicBall";
 
 const App = () => {
     useEffect(() => {
@@ -14,16 +16,17 @@ const App = () => {
     }, []);
 
     return (
-        <div className="container">
-            <h1>Інформація про футбольні клуби</h1>
-            {Clubs.map((club, index) => (
-                <div key={index}>
-                    <ClubInfo Club={club} />
-                    <Achievements Club={club} />
-                    <Squad Club={club} />
-                </div>
-            ))}
-        </div>
+        // <div className="container">
+        //     <h1>Інформація про футбольні клуби</h1>
+        //     {Clubs.map((club, index) => (
+        //         <div key={index}>
+        //             <ClubInfo Club={club} />
+        //             <Achievements Club={club} />
+        //             <Squad Club={club} />
+        //         </div>
+        //     ))}
+        // </div>
+        <MagicBall/>
     );
 };
 
