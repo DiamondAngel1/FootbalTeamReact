@@ -1,11 +1,37 @@
-body {
-    background-color: #000000;
+.body-theme-1 {
+    background: linear-gradient(135deg, #33333355 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #333333 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #33333355 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #333333 25%, #222222 25%) 0px 0/ 20px 20px;
+}
+
+.body-theme-2 {
+    background-color: #222222;
     opacity: 1;
-    background: linear-gradient(135deg, #42000055 25%, transparent 25%) -31px 0/ 62px 62px, linear-gradient(225deg, #420000 25%, transparent 25%) -31px 0/ 62px 62px, linear-gradient(315deg, #42000055 25%, transparent 25%) 0px 0/ 62px 62px, linear-gradient(45deg, #420000 25%, #000000 25%) 0px 0/ 62px 62px;}
+    background-image:  linear-gradient(30deg, #333333 12%, transparent 12.5%, transparent 87%, #333333 87.5%, #333333), linear-gradient(150deg, #333333 12%, transparent 12.5%, transparent 87%, #333333 87.5%, #333333), linear-gradient(30deg, #333333 12%, transparent 12.5%, transparent 87%, #333333 87.5%, #333333), linear-gradient(150deg, #333333 12%, transparent 12.5%, transparent 87%, #333333 87.5%, #333333), linear-gradient(60deg, #33333377 25%, transparent 25.5%, transparent 75%, #33333377 75%, #33333377), linear-gradient(60deg, #33333377 25%, transparent 25.5%, transparent 75%, #33333377 75%, #33333377);
+    background-size: 20px 35px;
+    background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+.body-theme-3 {
+    background-color: #222222;
+    opacity: 1;
+    background-size: 10px 10px;
+    background-image: repeating-linear-gradient(45deg, #333333 0, #333333 1px, #222222 0, #222222 50%);
+}
+
+.body-theme-4 {
+    background-color: #222222;
+    opacity: 1;
+    background-image: linear-gradient(-45deg, #222222, #222222 50%, #333333 50%, #333333);
+    background-size: 10px 10px;
+}
+
+.body-theme-5 {
+    background: radial-gradient(circle, transparent 20%, #222222 20%, #222222 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #222222 20%, #222222 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#333333 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #333333 2px, #222222 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
 
 h1 {
     text-align: center;
-    color: #ff0018 !important;
+    color: white !important;
     background: black;
     font-size: 32px;
     margin-bottom: 40px;
@@ -14,22 +40,21 @@ h1 {
 
 }
 
-.card {
-    background-color: rgb(0, 0, 0) !important;
-    border: 2px solid red !important;
+.club-logo {
+    width: 120px;
+    margin-top: 10px;
+}
+
+.card-title.flamengo {
+    color: #ff0019;
+}
+.card.flamengo {
+    background: linear-gradient(135deg, #42000055 25%, transparent 25%) -31px 0/ 62px 62px, linear-gradient(225deg, #420000 25%, transparent 25%) -31px 0/ 62px 62px, linear-gradient(315deg, #42000055 25%, transparent 25%) 0px 0/ 62px 62px, linear-gradient(45deg, #420000 25%, #000000 25%) 0px 0/ 62px 62px;
+    border: 2px solid red;
     padding: 25px;
     margin-bottom: 30px;
-
 }
-
-.card-title {
-    color: #ff0019 !important;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.list-group-item {
+.list-group-item.flamengo {
     background-color: black !important;
     border: none;
     color: white !important;
@@ -37,7 +62,21 @@ h1 {
     padding-left: 0;
 }
 
-.club-logo {
-    width: 120px;
-    margin-top: 10px;
+.card-title.dynamo {
+    color: #ffd700;
+}
+
+.card.dynamo {
+    background: linear-gradient(135deg, #00367755 25%, transparent 25%) -31px 0/ 62px 62px, linear-gradient(225deg, #003677 25%, transparent 25%) -31px 0/ 62px 62px, linear-gradient(315deg, #00367755 25%, transparent 25%) 0px 0/ 62px 62px, linear-gradient(45deg, #003677 25%, #aa9618 25%) 0px 0/ 62px 62px;
+    border: 2px solid #0057b7;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.list-group-item.dynamo {
+    background-color: #003677FF !important;
+    border: none;
+    color: white !important;
+    font-size: 16px;
+    padding-left: 0;
 }
